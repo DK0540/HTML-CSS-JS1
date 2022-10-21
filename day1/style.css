@@ -1,0 +1,132 @@
+body {
+    margin: 0%;
+    background-color:  #010000; 
+    background: url("flowers-276014__340.jpg");
+    background-size: cover;
+    padding: 50px;
+    
+}
+.main1 {
+    padding: 10px; margin: 10px;
+}
+.help {
+    text-align: end;
+    color: rgba(255, 174, 0, 0.918);
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.dating {
+          padding: 0px;
+        color: rgb(255, 38, 0);
+    border-radius: 3000px;
+    font-size: 40px;
+    word-spacing: 10px;
+          background-color: rgba(0, 0, 0, 0.377);
+          text-shadow: 2px 5px 3px black;
+           font-family: 'Dancing Script', cursive; 
+           text-align: center; 
+           color: rgb(rgb(255, 0, 0), rgb(109, 128, 0), blue);
+}
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+h2{   
+
+    
+        margin: 0px;
+    padding: 8px;
+    color: white;
+        text-shadow: 2px 2px 4px #000000;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background-size: 90px 50px;
+    background-color: rgba(235, 19, 19, 0.164);
+        color: white;
+        background-size: 90px 50px;
+        text-shadow: 2px 2px 4px #000000;
+      }
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+#person{
+    font-family: 'Kaushan Script', cursive; 
+    color: rgb(71, 255, 71); 
+    text-indent: 20px; 
+    text-shadow: 2px 5px 3px black;
+}
+.main {
+    text-indent: 100px;
+}
+.u1 {
+     color: rgb(236, 236, 236);
+}
+.u3 {
+    color: black;
+}
+.check {
+    background-color: black;
+  color: white;
+    background-color: rgb(red, rgba(126, 128, 0, 0.493), rgba(0, 68, 255, 0.295));
+}
+.box {
+    position: relative;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.box {
+    margin: 0 0 20px;
+    padding: 5px;
+    font-size: 20px;
+    color: #044463;
+}
+.edu {
+    margin: 0px;
+    padding: 8px;
+    color: white;
+        text-shadow: 2px 2px 4px #000000;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background-size: 90px 50px;
+    background-color: rgba(235, 19, 19, 0.164);
+}
+.h6 {
+    margin: 0px;
+    padding: 0px;
+    color: #fdfbfb;
+    text-shadow: 0 0 3px #FF0000;
+    font-family: 'Estonia', cursive;
+    font-size: 20px;
+    line-height: 0.4px;
+}
+.box {
+    border-radius: 20px;
+}
+
+
+.btn{
+    background-color: red;
+    margin-left: 50%;
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    opacity: 0.6;
+   
+}
+.btn:hover{
+    background-color: #010000;
+}
+
+.btn:active{
+    background-color: aqua;
+}
