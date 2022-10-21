@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+         .icon{
+        width: 30px;
+        height: 30px;
+     }
+
+     .icon1{
+        width: 60px;
+        height: 30px;
+        margin-left: 20px;
+    
+     }
+     .icon2{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        border-radius: 20px;
+     }
+
+     .icon3{
+        width: 30px;
+        height: 30px;;
+        border-radius: 20px;
+     }
+
+     .icon4{
+        width: 30px;
+        height: 30px;
+       
+        border-radius: 20px;
+       }
+
+      
+     .profile{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+       
+     }
+
+     .nav{
+        background-color: rgb(204, 200, 200);
+
+       
+     }
+
+     .search{
+        margin-left: 60px;
+        margin-top: -30px;
+        display: inline-block;
+     }
+      
+
+     .main2{
+        display: inline-block;
+        margin-left: 190px;
+     }
+
+     .main3, .main4, .main5{
+        width: 210px;
+        height: 200px;
+        background-color: rgb(252, 252, 252);
+        display: inline-block;
+     }
+     .clogo{
+        width: 210px;
+        height: 100px;
+     }
+
+     .clogo2{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        
+     }
+
+     .text{
+        font-size: 15px;
+        margin-left: 35px;
+        margin-top: -30px;
+     }
+
+     .name{
+        margin-left: 35px;
+    margin-top: 20px;
+     font-size: 10px;
+     }
+
+     .views{
+        margin-left: 35px;
+    margin-top:  -5px;
+     font-size: 10px;
+     }
+
+     .content{
+        margin-left: 30px;
+        margin-top: 30px;
+        
+     }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <img class="icon" src="https://www.iconbolt.com/preview/twitter/evil-icons/navicon.svg" alt="">
+     <img class="icon1" src="https://images.indianexpress.com/2017/08/youtube_logo_new-759.jpg" alt="youtubeIcon">
+     <input class="search" placeholder="Search" type="text">
+     <button class="btn">click</button>
+     <img class="icon2" src="data:image/png;base64,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" alt="">
+
+
+
+      <div class="main2">
+        <img class="icon3" src="https://img.favpng.com/19/23/12/computer-icons-upload-youtube-download-png-favpng-Fhm8Gza7vuABwbLgiEWWTxkad.jpg" alt="">
+     <img class="icon4" src="https://user-images.githubusercontent.com/48891420/55279922-a70e4300-52ec-11e9-9b0c-893752ab791f.png" alt="">
+
+     <img class="profile" src="https://images.unsplash.com/photo-1628563694622-5a76957fd09c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80" alt="">
+     </div>
+     </div>
+
+     <div class="content">
+             
+      <div class="main3">
+        <img class="clogo"  src="https://i.ytimg.com/vi/xyVfLxV08I0/maxresdefault.jpg" alt="card">
+        <img class="clogo2" src="https://png.pngtree.com/png-clipart/20210509/original/pngtree-modern-youtube-channel-logo-design-png-image_6275566.jpg" alt="iconsC">
+        <h1 class="text">Hello this is my new video</h1>
+        <p class="name">Hello world</p>
+        <p class="views">1M views . 1 year ago </p>
+
+      </div>
+
+       
+      <div class="main4">
+        <img class="clogo"  src="https://i.ytimg.com/vi/xyVfLxV08I0/maxresdefault.jpg" alt="card">
+        <img class="clogo2" src="https://png.pngtree.com/png-clipart/20210509/original/pngtree-modern-youtube-channel-logo-design-png-image_6275566.jpg" alt="iconsC">
+        <h1 class="text">Hello this is my new video</h1>
+        <p class="name">Hello world</p>
+        <p class="views">1M views . 1 year ago </p>
+
+      </div>
+
+       
+      <div class="main5">
+        <img class="clogo"  src="https://i.ytimg.com/vi/xyVfLxV08I0/maxresdefault.jpg" alt="card">
+        <img class="clogo2" src="https://png.pngtree.com/png-clipart/20210509/original/pngtree-modern-youtube-channel-logo-design-png-image_6275566.jpg" alt="iconsC">
+        <h1 class="text">Hello this is my new video</h1>
+        <p class="name">Hello world</p>
+        <p class="views">1M views . 1 year ago </p>
+
+      </div>
+     </div>
+
+ 
+
+      
+</body>
+</html>
