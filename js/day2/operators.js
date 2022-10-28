@@ -55,3 +55,6 @@ let d = 4;
 d--;
 // d - 1
 console.log(d);
+
+x += y;
+h -= j;
