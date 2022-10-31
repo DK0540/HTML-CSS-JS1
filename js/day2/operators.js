@@ -19,24 +19,24 @@
 
 // console.log(a);
 
-// let food = Number(prompt("How much was the food?"));
+let food = Number(prompt("How much was the food?"));
 // console.log(typeof food);
-// tipPercentage = Number(prompt("tip %?")) / 100;
+let tipPercentage = Number(prompt("tip %?")) / 100;
 
-// tipAmout = food * tipPercentage;
-// total = food + tipAmout;
+tipAmout = food * tipPercentage;
+total = food + tipAmout;
 
-// console.log("tip amount: ", tipAmout);
+console.log("tip amount: ", tipAmout);
 
-// console.log("total: ", total);
+console.log("total: ", total);
 
-// let a = 80;
-// let b = 16;
+let a = 80;
+let b = 16;
 
-// let total = a + b;
-// console.log(total);
+let total = a + b;
+console.log(total);
 
-// console.log(typeof a);
+console.log(typeof a);
 
 // Exponentiation  (**)
 // increment (++)

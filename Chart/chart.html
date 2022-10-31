@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div style="width:400px; height:600px; color: red;">
+        <canvas style="color:red; background-color:  #010000; " id="myChart"></canvas>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+        const labels = [
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'red',
+            borderColor: 'red',
+            data: [0,40 , 5, 2, 20, 30, 45],
+          }]
+        };
+      
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+      </script>
+      <script>
+        const myChart = new Chart(
+          document.getElementById('myChart'),
+          config
+        );
+      </script>
+      
+      
+
+</body>
+</html>
