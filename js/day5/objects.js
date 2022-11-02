@@ -110,23 +110,23 @@
 
 //===========================>>>>>>>>
 
-function createPerson(firstName, lastName) {
-  return {
-    firstName: firstName,
-    lastName: lastName,
-  };
-}
+// function createPerson(firstName, lastName) {
+//   return {
+//     firstName: firstName,
+//     lastName: lastName,
+//   };
+// }
 
-let personActions = {
-  getFullName() {
-    return this.firstName + " " + this.lastName;
-  },
-};
+// let personActions = {
+//   getFullName() {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
 
-let person3 = createPerson("harry", "Deo");
-person3.getFullName = personActions.getFullName;
-console.log(person3.getFullName());
+// let person3 = createPerson("harry", "Deo");
+// person3.getFullName = personActions.getFullName;
+// console.log(person3.getFullName());
 
-let person4 = createPerson("kandy", "singh");
-person4.getFullName = personActions.getFullName;
-console.log(person4.getFullName());
+// let person4 = createPerson("kandy", "singh");
+// person4.getFullName = personActions.getFullName;
+// console.log(person4.getFullName());

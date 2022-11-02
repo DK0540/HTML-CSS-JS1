@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<input lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+     .output{
+        width: 400px;
+        height: 300px;
+        background-color: bisque;
+     }
+    </style>
+</head>
+<input>
+    
+
+
+
+     
+
+
+    <h1><span>Form Input</span></h1>
+    <p>Intro/Dom element</p>
+
+    <div class="regular">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident error. Accusamus</p>
+            
+            <input type="text">
+    
+            <p id="demo5">change</p>
+           
+           
+           <h2>TextBox</h2>
+           <label for="user">UserName</label>
+           <input type="text" id="user" placeholder="Enter UserName" maxlength="10">
+           <input type="button" id="btn1" value="Click Me">
+
+           <p class="output" id="output1">result</p>
+           <button id="btn">Show alert</button>
+
+           
+    </div>
+    <script>
+        //====================> ex-1
+          // element.addEventListener(eventType, listenerFunction)
+        let input = document.getElementsByTagName("input")[0];
+
+         input.addEventListener("change", function(){
+            document.getElementById("demo5").innerHTML = input.value
+         })
+
+
+     //===================>>  Ex-2
+    let btn = document.getElementById("btn")
+        
+  
+        btn.addEventListener("click", function(){
+            alert("hello world")
+        })
+      
+
+// =======================>>ex-3
+
+      const txt1 = document.getElementById("user");
+      const btn1 = document.getElementById("btn1");
+      const out1 = document.getElementById("output1");
+
+      function fun1(){
+        out1.innerHTML = txt1.value;
+      }
+
+
+      btn1.addEventListener("click",fun1);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" id="rd1" name="grp1" value="male">Male</input>
+    <br>
+    <input type="radio" id="rd2" name="grp1" value="female">female</input>
+    <br>
+    <button onclick="func1()">click</button>
+    <script>
+        function func1 (){
+            let rd1 = document.getElementById("rd1");
+            let rd2 = document.getElementById("rd2");
+
+            if(rd1.checked == true){
+              alert("sected radio button is :" + rd1.value);
+            }else if(rd2.checked==true){
+                alert("selected radio button is:" + rd2.value)
+            }else{
+                alert("No radio button is selected")
+            }
+        }
+    </script>
+</body>
+</html>
