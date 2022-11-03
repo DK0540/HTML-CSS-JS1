@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content:space-around;
+          }
+        .imag1{
+            width: 100px;
+            height: 100px;
+           
+           }
+    </style>
+</head>
+<body style="margin-bottom: 1000px;">
+    <h1 id="title">Zeal park</h1>
+
+    
+    <label>Enter Your Name</label>
+    <input id="input" type="text">
+    <p id="wish"></p>
+
+    
+   <!-- //3-------------->
+    <input type="radio" id="rd1" name="grp1" value="Card">Card</input>
+    <br>
+    <input type="radio" id="rd2" name="grp1" value="Cash">Cash</input>
+    <br>
+    <p id="out"></p>
+
+    <button onclick="func1()">click</button>
+    
+       
+
+    <div class="main">
+        <img class="imag1" id="img" src="https://images.pexels.com/photos/236599/pexels-photo-236599.jpeg?cs=srgb&dl=pexels-pixabay-236599.jpg&fm=jpg" alt="img">
+        
+        <img class="imag1"  id="img1" src="https://images.unsplash.com/photo-1484406566174-9da000fda645?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="img">
+        <img class="imag1" id="img2" src="https://i.pinimg.com/564x/9d/d7/81/9dd781ba4457b92f1f89072190002d89--twitter-bald-eagle.jpg" alt="img">
+    </div>
+  
+    <script>
+
+ let title = document.getElementById("title");
+ console.log(title)
+
+ title.addEventListener("mouseover",function(){
+title.style.color="red";
+title.style.backgroundColor="black";
+title.style.textAlign="center"
+  })
+
+ 
+
+let name = document.getElementById("input");
+
+let wish =document.getElementById("wish");
+  
+name.addEventListener("change",function(){
+wish.innerHTML= "Hi " +  name.value + " welcome to Zeal park please select payment method"
+})
+
+
+
+       function myFunction() {
+ let val = document.getElementById("main2");
+val[0].style.backgroundColor = "red";
+}
+
+
+        let img = document.getElementById("img")
+        let img1 = document.getElementById("img1")
+        let img2 = document.getElementById("img2")
+        
+        img.addEventListener("mouseover", function(){
+            img.style.width="200px"
+            img.style.height="200px"
+        })
+
+        img.addEventListener("mouseleave",function(){
+            img.style.width="100px";
+            img.style.height="100px";
+        })
+
+            img1.addEventListener("mouseover", function(){
+            img1.style.opacity="100%"
+            img1.style.borderRadius="50%"
+            })
+
+            img1.addEventListener("mouseleave",function(){
+            img1.style.opacity="50%";
+            img1.style.borderRadius="0"
+          })
+
+
+
+        img2.addEventListener("mouseover", function(){
+            img2.style.border="20px solid black";
+            img2.style.borderRadius="20px";
+       })
+
+        img2.addEventListener("click",function(){
+            img2.style.border="none";
+          })
+
+
+
+          function func1 (){
+        
+            let rd1 = document.getElementById("rd1");
+            let rd2 = document.getElementById("rd2");
+
+            let out = document.getElementById("out");
+
+            if(rd1.checked == true){
+                alert("Please confirm : " + rd1.value);
+               document.getElementById("out").innerHTML= "15% offer on card"
+            }else if(rd2.checked==true){
+                alert("Please confirm : " + rd2.value);
+                document.getElementById("out").innerHTML="Snacks free"
+            }else{
+                alert("Please select payment")
+            }
+        }
+       
+    </script>
+</body>
+</html>
