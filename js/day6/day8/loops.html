@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="demo">
+   </p>
+
+   <p id="demo2"></p>
+
+    <script>
+
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+// let count = fruits.length;
+
+let html = "";
+for (let i=0; i < fruits.length; i++) {
+
+    html += "<p>" + fruits[i] + "</p>"
+ }
+document.getElementById("demo").innerHTML= html
+
+
+let num = [12,3,4,56,876,890];
+let count = 0;
+
+for(let i=0; i<num.length; i++){
+  count += num[i]
+}
+console.log(count)
+
+
+//while loop
+// while (condition) {
+//   //code blocks
+// }
+// let i = 1,
+//     n = 5;
+
+// while (i <= n) {
+//   console.log(i);
+//   i += 1;
+// }
+
+let cities = ["bangalore", "goa", "Mumbai", "pune"]
+let i = 0;
+let city = "";
+
+while(i < cities.length){
+    city += "<p>" + "Someday I want to go "  + cities[i+3] + ".</p>";
+    i++;
+}
+document.getElementById("demo2").innerHTML = city;
+</script>
+</body>
+</html>
+<!-- 
+let students = [34,60,65,90,80,10,15];
+output: 65,90,80; -->
+let students = [34,60,65,90,80,10,15];
+
+let num = 60;
+
+for(let i=0; i<students.length; i++){
+    if(students[i] > num){
+        console.log(`Max marks: ${students[i]}`)
+    }
+}
+
+
+
+
+

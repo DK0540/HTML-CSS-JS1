@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //create element -->
+    <div id="demo">
+      <p></p>
+    </div>
+
+    <!-- insert elements -->
+    <ul id="list">
+        <li>Mangos</li>
+        <li>Bananas</li>
+        <button onclick="addEl()">Add</button>
+        <button onclick="removeEl()">Remove</button>
+    </ul>
+
+    <script>
+        let element = document.createElement("p");
+
+        let textNode = document.createTextNode("Hi good morning all");
+
+        element.appendChild(textNode)
+
+      let main = document.getElementById("demo");
+          main.appendChild(element);
+
+        //   insert elements
+     let list = document.getElementById("list");
+
+     function addEl(){
+        let li = document.createElement("li");
+        let text = document.createTextNode("Strawberry");
+        li.appendChild(text);
+
+        list.prepend(li);
+     }
+
+     // remove elements
+
+     function removeEl(){
+        let firstCh = list.firstElementChild;
+        firstCh.remove();
+     }
+       
+
+    </script>
+</body>
+</html>
