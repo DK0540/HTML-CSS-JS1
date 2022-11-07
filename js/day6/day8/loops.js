@@ -3,7 +3,7 @@
 //while loop===========>done
 //do-while loop
 //for-in loop
-//for- of loop
+//for-of loop
 // for Each loop
 //callback
 //promise
