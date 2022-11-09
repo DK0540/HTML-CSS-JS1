@@ -66,11 +66,12 @@ const countContainer = document.getElementById("countdown-number");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
 const resetButton = document.getElementById("reset");
-
 const timeoutAudio = document.getElementById("timeout_audio");
+
 let remainingTime = 60;
 let timer;
 let isStopped = true;
+
 const startTimer = () => {
   if (isStopped) {
     isStopped = false;
@@ -111,6 +112,7 @@ const renderTime = () => {
 </body>
 </html>
 
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,7 +122,101 @@ const renderTime = () => {
     <title>Document</title>
 </head>
 <body>
-    <h1>hello world</h1>
-   <script src="./script.js"></script> 
+   <style>
+        body{
+           background:linear-gradient(to left,rgb(73, 201, 163),rgb(151, 247, 151),rgb(250, 205, 83));
+           
+        }
+        .container{
+           margin: 100px auto;
+           text-align: center;
+        }
+        button{
+           border-radius: 4mm;
+           text-align: center;
+           margin: 30px;
+           width: 100px;
+           height: 40px;
+           border: width 0.2mm;
+           font-size: large;
+           align-items: center;
+           display: grid;
+           margin-left: 570px;
+        }
+        button:hover{
+           cursor: pointer;
+           background:linear-gradient(to left,rgb(235, 65, 65),orange);
+           color: aliceblue;
+           transition: 0.4s;
+       
+        }
+        h3{
+           font-size: 4em;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           color: rgb(187, 62, 89);
+           text-align: center;
+        }
+        p{
+           font-size: 2em;
+           color: rgb(152, 33, 175);
+           text-align: center;
+        }
+       </style>
+       <body>
+           <div >
+        <div class="container">
+               <h3>.Demo_Timer.</h3>
+               <p><span id="second"> 00 </span> min.    <span id="tens"> 00 </span><span> sec.</span></p>
+               <button id="btn-start">Start</button>
+               <button id="btn-stop">Stop</button>
+       
+           </div>
+       </body>
+       <script>
+           let seconds = 00;
+           let tens = 00;
+           let OutputSeconds= document.getElementById("second");
+           let OutputTens=document.getElementById("tens");
+           var buttonStart=document.getElementById("btn-start");
+           var buttonStop=document.getElementById("btn-stop");
+           var Interval;
+       
+       
+           buttonStart.addEventListener('click',() =>{
+               clearInterval(Interval);
+               Interval = setInterval(startTime,60);
+       
+           });
+           buttonStop.addEventListener('click',() =>{
+               clearInterval(Interval);
+       
+           });
+       
+           function startTime(){
+               tens++;
+               if(tens <= 9){
+                   OutputTens.innerHTML = "0" + tens;
+               }
+       
+               if(tens > 9){
+                   OutputTens.innerHTML = tens;
+               }
+       
+               if(tens > 60){
+                   seconds++;
+                   OutputSeconds.innerHTML = "0" + seconds;
+                   tens = 0;
+                   OutputTens.innerHTML = "0"+ tens;
+       
+               }
+       
+               if(seconds > 9){
+                   OutputSeconds.innerHTML = seconds;
+               
+               }
+           }
+       
+       </script>
+       </html>
 </body>
 </html> -->
